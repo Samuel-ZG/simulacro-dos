@@ -1,11 +1,11 @@
 namespace WellnessHub_API_g3;
-
+    //Hola Hermann que haces
 public class Worker : BackgroundService
 {
     private readonly ILogger<Worker> _logger;
 
     public Worker(ILogger<Worker> logger)
-    {
+    {   
         _logger = logger;
     }
 

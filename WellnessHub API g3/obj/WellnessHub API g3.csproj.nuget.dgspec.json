@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samuel\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\WellnessHub API g3.csproj": {}
+    "C:\\Users\\Hp\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\WellnessHub API g3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samuel\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\WellnessHub API g3.csproj": {
+    "C:\\Users\\Hp\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\WellnessHub API g3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\WellnessHub API g3.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\WellnessHub API g3.csproj",
         "projectName": "WellnessHub API g3",
-        "projectPath": "C:\\Users\\Samuel\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\WellnessHub API g3.csproj",
-        "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\obj\\",
+        "projectPath": "C:\\Users\\Hp\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\WellnessHub API g3.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\RiderProjects\\simulacro-dos\\WellnessHub API g3\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,12 +44,20 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -77,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

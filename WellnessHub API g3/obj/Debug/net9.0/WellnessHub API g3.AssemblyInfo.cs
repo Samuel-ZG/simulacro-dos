@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WellnessHub API g3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fd3c6d20ad44b8153318279c103d0e6f5864f63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3503cad977e2d85b1b8ea366888e403111e6191")]
 [assembly: System.Reflection.AssemblyProductAttribute("WellnessHub API g3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WellnessHub API g3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

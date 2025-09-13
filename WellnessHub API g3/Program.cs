@@ -24,7 +24,7 @@ if (app.Environment.IsDevelopment())
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
         x => x.MigrationsAssembly("MiProyecto.Data")));
-
+//hola
 // 4. Habilita HTTPS
 app.UseHttpsRedirection();
 

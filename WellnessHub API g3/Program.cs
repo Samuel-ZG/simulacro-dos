@@ -1,9 +1,13 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using WellnessHubAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // 1. Agrega soporte para controladores
 builder.Services.AddControllers();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // 2. Agrega servicios para Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -17,6 +21,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+        x => x.MigrationsAssembly("MiProyecto.Data")));
 
 // 4. Habilita HTTPS
 app.UseHttpsRedirection();
